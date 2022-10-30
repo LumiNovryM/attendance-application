@@ -5,7 +5,7 @@
 - M Andhyka S - https://github.com/dhykas
 - Fathir Akmal B - https://github.com/tirbyss
 - Kanny Indira Baihaqi - https://github.com/kan327
-- Septhea Zisca Aurora - 
+- Septhea Zisca Aurora - https://github.com/septheazisca
 - Ridho Rizky P - https://github.com/ZeroneDoo
 
 
