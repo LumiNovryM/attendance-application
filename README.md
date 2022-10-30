@@ -1,7 +1,7 @@
 # Attendance Application
 ## _Developed By_
 - Lumi Novry M - https://github.com/LumiNovryM
-- Tsaqif Maulanan - https://github.com/tsaqifmaulana444
+- Tsaqif Maulana - https://github.com/tsaqifmaulana444
 - M Andhyka S - https://github.com/dhykas
 - Fathir Akmal B - https://github.com/tirbyss
 - Kanny Indira Baihaqi - https://github.com/kan327
