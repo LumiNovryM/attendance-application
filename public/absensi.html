@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/CSS/output.css">
+    <link rel="stylesheet" href="assets/CSS/suport.css">
+    <!-- config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'blue-dark': '#1061FF',
+                        'blue': '#349DFD',
+                        'blue-table': '#002C9D',
+                        'tet': '#001458',
+                        'unselect': '#BAC5E7',
+                        'tet-x': '#5A5A5A',
+                        'stroke': '#81B7E9',
+                    },
+                    boxShadow: {
+                        nav: '2px 2px 50px 1px rgba(179, 185, 191, 0.1);',
+                        side: ' 0px 5px 10px rgba(0, 0, 0, 0.05);',
+                        stable: ' 0px 3px 4px rgba(0, 0, 0, 0.25);',
+                    }
+                },
+            }
+        }
+    </script>
+    <!-- font material ++ -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap"rel="stylesheet">
+</head>
+
+<body class="text-tet">
+    <!-- navbar top -->
+    <div class="px-16 py-4 shadow-nav flex justify-between w-full bg-white z-10 fixed top-0">
+        <h1 class="text-xl font-bold text-blue-dark">
+            StarBhak</h1>
+        <div class="flex">
+            <p class="py-1 mr-2 font-semibold">
+                Erraldo |</p>
+            <button class="bg-blue-dark text-white px-2 py-1 rounded ">
+                Log Out</button>
+        </div>
+    </div>
+
+    <!-- Sidebar left -->
+    <div class="px-14 py-20 shadow-side w-fit h-[100vh] top-16 fixed">
+        <a href="homeSiswa.html">
+        <div class="text-unselect"><span class="material-symbols-outlined -mb-3 mr-5">home</span>
+            Dashboard
+        </div></a>
+        <a href="absensi.html">
+        <div class="mt-10 font-semibold"><span class="material-symbols-outlined -mb-3 mr-5">library_books</span>
+            Absen
+        </div></a>
+        <div class="mt-10 text-unselect"><span class="material-symbols-outlined -mb-3 mr-5">assignment_ind</span>
+            Data Siswa
+        </div>
+        <div class="mt-10 text-unselect"><span class="material-symbols-outlined -mb-3 mr-5">sms_failed</span>
+            Laporan
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="absolute left-72 w-3/4">
+        <h1 class="text-3xl text-blue font-bold mt-32 font-[Montserrat]">Riwayat Mata Pelajaran</h1>
+        <button class="bg-blue text-white py-2 px-4 rounded-xl mt-5 w-fit mx-auto font-semibold" onclick="keiAlert('Data Berhasil Disimpan')">+ Buat</button>
+
+        <!-- table -->
+        <div class="h-96 overflow-auto mt-5">
+            <table class="w-full font-[Montserrat]">
+                <thead class="text-blue-table bg-white font-extrabold text-xl shadow-stable top-0 sticky z-10">
+                    <tr class="">
+                        <th class="p-3">NO</th>
+                        <th class="p-3">HARI</th>
+                        <th class="p-3">KELAS</th>
+                        <th class="p-3">MAPEL</th>
+                        <th class="p-3">MULAI</th>
+                        <th class="p-3">PULANG</th>
+                        <th class="p-3">ACTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                    <tr class="text-center border-tet-x border-t-0 border-l-0 border-r-0 border-[1px] border-solid hover:font-bold cursor-pointer">
+                        <td class="p-3">1</td>
+                        <td class="p-3">27/10/2022</td>
+                        <td class="p-3">XI PPLG 1</td>
+                        <td class="p-3">PBO</td>
+                        <td class="p-3">07.00</td>
+                        <td class="p-3">12.40</td>
+                        <td class="p-3"><span class="material-symbols-outlined -mb-3 mr-5">edit</span> <span class="material-symbols-outlined -mb-3 mr-5">folder</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<!-- custom alert -->
+    <script src="assets/JS/cstkei.alert.js"></script>
+</body>
+</html>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./public/assets/css/output.css --watch -->
