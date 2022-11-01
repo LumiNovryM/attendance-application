@@ -1,0 +1,41 @@
+@font-face {
+    font-family: quicksands;
+    src: url(../quicksand-v30-latin-regular.woff2);
+}
+* {
+    transition: 0.1s;
+}
+body{
+    font-family: quicksands;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    background: #BAC5E7;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #349DFD;
+    border-radius: 10px;
+}
+.web-hover:hover ::-webkit-scrollbar{
+    background: white;
+}
+.web-hover:hover ::-webkit-scrollbar-thumb{
+    background-color: #1061FF;
+}
+@keyframes uper {
+    0%{left: 150%}
+    100%{left: 75%}
+}
+.animated-up{
+    animation-name: uper;
+    animation-duration: 1s;
+}
+@keyframes downer {
+    0%{left: 75%}
+    100%{left: 150%}
+}
+.animated-down{
+    animation-name: downer;
+    animation-duration: 1s;
+}

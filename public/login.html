@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="assets/CSS/output.css">
+    <link rel="stylesheet" href="assets/CSS/suport.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- inter -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- kontainer -->
+    <div class="w-screen h-screen">
+
+        <!-- kiri -->
+        <div class="h-full w-3/5 float-left">
+            <!-- gambar -->
+
+            <div class="flex justify-center h-[60%] mt-[15%] w-ful">
+                <img src="assets/img/tl.png" alt="" srcset="">
+            </div>
+            <footer class="text-[#293B91] font-[inter] mt-24 ml-10">©CopyRight by ...</footer>
+ 
+        </div>
+        <!-- kanan -->
+        <div style="box-shadow: -5px -5px 8px rgba(0, 0, 0, 0.25);" class="h-full w-2/5 float-right">
+
+            <!-- judul -->
+            <div class="flex items-end justify-center w-full h-32">
+                <h1 style="color:#4373E7; font-family: 'Inter';" class="text-4xl font-bold">Login</h1>
+            </div>
+            <!-- inputan -->
+            <div class=" w-full mt-10 h-24 ">
+                <!-- username -->
+                <label class="text-[#293B91] font-[Inter] font-medium text-2xl ml-24" for="">Username</label><br>
+                <input style="border: 1px solid rgba(166, 166, 166, 0.8);" placeholder="Username"
+                    class=" mt-6 ml-24 w-[300px] h-[40px] rounded" type="text">
+            </div>
+
+            <div class=" w-full mt-10 h-28 ">
+                <!-- Password -->
+                <label class="text-[#293B91] font-[Inter] font-medium text-2xl ml-24" for="">Password</label><br>
+                <input style="border: 1px solid rgba(166, 166, 166, 0.8);" placeholder="Password"
+                    class=" mt-6 ml-24 w-[300px] h-[40px] rounded" type="password">
+            </div>
+
+            <button
+                class="w-[300px] h-[40px] text-white bg-[#4373E7] font-[inter] text-[20px] mt-10 ml-24 rounded">login</button>
+
+        </div>
+
+
+
+    </div>
+    <!-- custom alert -->
+    <script src="assets/JS/cstkei.alert.js"></script>
+</body>
+
+</html>
+
+
+<!-- npx tailwindcss -i ./src/input.css -o ./public/assets/css/output.css --watch -->
